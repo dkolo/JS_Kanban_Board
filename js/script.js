@@ -22,7 +22,22 @@ $(function() {
             var $columnDelete = $('<button>').addClass('btn-delete').text('x');
             var $columnAddCard = $('<button>').addClass('add-card').text('Add a card');
 
-            
-        };
+            // ADDING EVENTS	
+            $columnDelete.click(function() {
+                self.removeColumn();
+            });
+            $columnAddCard.click(function() {
+                self.addCard(new Card(prompt("Enter the name of the card")));
+            });
+            // CONSTRUCTION COLUMN ELEMENT
+            $column.append($columnTitle)
+                .append($columnDelete)
+                .append($columnAddCard)
+                .append($columnCardList);
+
+            // RETURN OF CREATED COLUMN
+            return $column;
+        }
+        
     }
 });
