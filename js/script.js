@@ -16,6 +16,7 @@ $(function() {
         this.$element = createColumn();
 
         function createColumn() {
+            // CREATING COMPONENTS OF COLUMNS
             var $column = $('<div>').addClass('column');
             var $columnTitle = $('<h2>').addClass('column-title').text(self.name);
             var $columnCardList = $('<ul>').addClass('column-card-list');
@@ -46,5 +47,17 @@ $(function() {
                 this.$element.remove();
             }
         };
+    }
+
+    function Card(description) {
+        var self = this;
+
+        this.id = randomString();
+        this.description = description;
+        this.$element = createCard();
+
+        function createCard() {
+            // Implementation of card creation
+        }
     }
 });
