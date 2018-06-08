@@ -38,6 +38,13 @@ $(function() {
             // RETURN OF CREATED COLUMN
             return $column;
         }
-        
+        Column.prototype = {
+            addCard: function(card) {
+                this.$element.children('ul').append(card.$element);
+            },
+            removeColumn: function() {
+                this.$element.remove();
+            }
+        };
     }
 });
