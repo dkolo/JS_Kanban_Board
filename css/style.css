@@ -1,5 +1,28 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.board {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	margin: 0 auto;
+	width: 1200px;
+}
+
+h1 {
+	text-align: center;
+}
+
+.create-column {
+	width: 200px;
+}
+
+.column-card-list {
+	min-height: 100px;
+}
+
 .card-placeholder {
 	background: blue;
-	with: 400px;
-	height: 300px;
 }
