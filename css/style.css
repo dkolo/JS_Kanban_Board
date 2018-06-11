@@ -1,28 +1,104 @@
 body {
-	font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+    background: #72C4B9;
 }
 
 .board {
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-direction: column;
-	flex-direction: column;
-	margin: 0 auto;
-	width: 1200px;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 90%;
+}
+
+button {
+    cursor: pointer;
+    background: #A4D0C4;
+    border: 1px dashed #FEFEE7;
+    border-radius: 4px;
+    color: #FEFEE7;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 10px;
+    margin: 2px 2px;
+    -webkit-transition-duration: 0.3s;
+    /* Safari */
+    transition-duration: 0.3s;
+}
+
+button:hover {
+    background: #72C4B9;
+    border: 1px solid #9A9C9F;
 }
 
 h1 {
-	text-align: center;
+    text-align: center;
+    color: #FEFEE7;
+    border: 4px dashed #9A9C9F;
+    padding: 10px 0;
+}
+
+.column-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+.column {
+    flex: 1;
+    min-width: 100px;
+    border: 2px dashed #FEFEE7;
+    margin: 2px;
+}
+
+h2 {
+    text-align: center;
+    color: #FEFEE7;
 }
 
 .create-column {
-	width: 200px;
+    display: block;
+    margin: 30px auto 10px auto;
+    width: 30%;
+    font-size: 20px;
 }
 
 .column-card-list {
-	min-height: 100px;
+    min-height: 200px;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+.card {
+    list-style-type: none;
+    background: #A4D0C4;
+    min-width: 80px;
+    margin: 2px;
+    -webkit-transition-duration: 0.1s;
+    /* Safari */
+    transition-duration: 0.1s;
+    width: 90%;
+    color: #FEFEE7;
+}
+
+.card:hover {
+    background: #FEFEE7;
+    color: #0F0F0D;
+    width: 90%;
 }
 
 .card-placeholder {
-	background: blue;
+    list-style-type: none;
+    background: #A4D0C4;
+    width: 90%;
+}
+
+.card-description {
+    padding: 0 10px;
 }
