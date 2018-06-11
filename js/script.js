@@ -89,5 +89,12 @@ $(function() {
             connectWith: '.column-card-list',
             placeholder: 'card-placeholder'
         }).disableSelection();
-    }
+    };
+    $('.create-column')
+        .click(function() {
+            var name = prompt('Enter a column name');
+            var column = new Column(name);
+            board.addColumn(column);
+        });
+
 });
