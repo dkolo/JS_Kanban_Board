@@ -10,6 +10,13 @@ body {
     width: 90%;
 }
 
+h1 {
+    text-align: center;
+    color: #FEFEE7;
+    border: 4px dashed #9A9C9F;
+    padding: 10px 0;
+}
+
 button {
     cursor: pointer;
     background: #A4D0C4;
@@ -23,20 +30,12 @@ button {
     padding: 10px 10px;
     margin: 2px 2px;
     -webkit-transition-duration: 0.3s;
-    /* Safari */
     transition-duration: 0.3s;
 }
 
 button:hover {
     background: #72C4B9;
     border: 1px solid #9A9C9F;
-}
-
-h1 {
-    text-align: center;
-    color: #FEFEE7;
-    border: 4px dashed #9A9C9F;
-    padding: 10px 0;
 }
 
 .column-container {
@@ -53,7 +52,7 @@ h1 {
     flex: 1;
     min-width: 100px;
     border: 2px dashed #FEFEE7;
-    margin: 2px;
+    margin: 4px;
 }
 
 h2 {
@@ -80,17 +79,16 @@ h2 {
     background: #A4D0C4;
     min-width: 80px;
     margin: 2px;
-    -webkit-transition-duration: 0.1s;
-    /* Safari */
-    transition-duration: 0.1s;
     width: 90%;
     color: #FEFEE7;
+    border: 2px dashed #FEFEE7;
 }
 
 .card:hover {
     background: #FEFEE7;
     color: #0F0F0D;
     width: 90%;
+    border-color: #9A9C9F;
 }
 
 .card-placeholder {
