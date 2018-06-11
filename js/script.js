@@ -73,7 +73,7 @@ $(function() {
             removeCard: function() {
                 this.$element.remove();
             }
-        }
+        };
     }
     var board = {
         name: 'Kanban Board',
@@ -89,7 +89,7 @@ $(function() {
             connectWith: '.column-card-list',
             placeholder: 'card-placeholder'
         }).disableSelection();
-    };
+    }
     $('.create-column')
         .click(function() {
             var name = prompt('Enter a column name');
