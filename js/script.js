@@ -64,10 +64,30 @@ $(function() {
             $cardDelete.click(function() {
                 self.removeCard();
             });
-            
+
             $card.append($cardDelete)
                 .append($cardDescription);
             return $card;
         }
+        Card.prototype = {
+            removeCard: function() {
+                this.$element.remove();
+            }
+        }
+    }
+    var board = {
+        name: 'Kanban Board',
+        addColumn: function(column) {
+            this.$element.append(column.$element);
+            initSortable();
+        },
+        $element: $('#board .column-container')
+    };
+
+    function initSortable() {
+        $('.column-card-list').sortable({
+            connectWith: '.column-card-list',
+            placeholder: 'card-placeholder'
+        }).disableSelection();
     }
 });
