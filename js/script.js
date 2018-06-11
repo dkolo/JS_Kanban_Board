@@ -96,7 +96,7 @@ $(function() {
             var column = new Column(name);
             board.addColumn(column);
         });
-        
+
     // CREATING COLUMNS
     var todoColumn = new Column('To do');
     var doingColumn = new Column('Doing');
